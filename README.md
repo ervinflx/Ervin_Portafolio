@@ -1,6 +1,3 @@
-# Portafolio de Ervin
-Portafolio de data science
-
 
 ## Proyecto 1.- Análisis de la relación entre ingresos y la edad de las personas en México (regresión lineal para estimar importancia de variables)
 ¿Existe una relación entre los ingresos y la edad de las personas en México?
@@ -109,7 +106,7 @@ La gráfica muestra que en efecto hay una relación entre la composición educat
 ![](/IMAGES/2022-05-08%20(2).png)
 
 
-La tabla nos muestra que existe una alta relación entre todos los niveles educativos y la edad al momento de esperar cierto incremento en el ingreso trimestral de las personas mexicanas. Agreguemos más variables y a partir de entonces veamos qué variables de todas las que INEGI provee son más importantes o menos importantes en el impacto que tengan con el ingreso trimestral.
+La tabla nos muestra que existe una alta relación entre todos los niveles educativos y la edad al momento de esperar cierto incremento en el ingreso trimestral de las personas mexicanas. Surge una pregunta ante esto, ¿qué pasa si se agregan más variables que el INEGI toma? A partir de entonces veamos qué variables de todas las que INEGI provee son más importantes o menos importantes en el impacto que tengan con el ingreso trimestral.
 
 
 
