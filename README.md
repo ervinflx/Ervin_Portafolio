@@ -27,7 +27,7 @@ La gráfica anterior nos muestra que entre más grande, en terminos de edad, sea
        x = "Último nivel aprobado",
        caption = "Elaboración propia a partir de las bases de datos de la Encuesta Nacional Ingreso Gasto del INEGI")`
 
-![](https://github.com/ervinflx/Ervin_Portafolio/blob/main/IMAGES/segunda%20foto.jpeg)
+![](/segunda%20foto.jpeg)
 
 Se observa en la gráfica anterior de boxplots que la mediana de los ingresos aumenta conforme el nivel educativo de las personas va incrementando ¿En este caso se podría hablar de una causalidad? No, se tienen que realizar diferentes estudios como los que se explican en la gráfica para poder hablar de una causalidad.
 Hay que tomar la variable de años y la variable del nivel educativo para observar qué relacionan tienen entre sí.
