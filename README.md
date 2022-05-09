@@ -63,7 +63,7 @@ La gráfica anterior es interesante de observar. Por un lado, los niveles educat
        fill= "Nivel de Aprobación",
        caption = "Elaboración propia a partir de las bases de datos\n de la Encuesta Nacional Ingreso Gasto del INEGI")`
  
-![](https://github.com/ervinflx/Ervin_Portafolio/blob/main/IMAGES/cuarta%20foto.jpeg)
+![](/IMAGES/cuarta%20foto.jpeg)
 
 La gráfica de arriba explica de mejor manera como la expansión de la educación media/superior fue en 1960, por lo que la mediana se ve afecada por la política pública de ese momento, un buen tema de análisis para alguien que estudie el impacto de las políticas públicas a largo plazo. Sin embargo, aún no se explica ¿por qué los ingresos medianos bajan con la edad? Se plantean dos hipótesis, 1) por diversos factores que están asociados directamente al envejecimiento (disminución de capacidad, discriminación, desactualización); 2) la composición educativa de las edades.
 
@@ -98,7 +98,7 @@ Se reducirán las categorías educativas a tres grupos para poder tener una mejo
        agrupado",
        caption = "Elaboración propia a partir de las bases de datos\n de la Encuesta Nacional Ingreso Gasto del INEGI")`
 
-![](https://github.com/ervinflx/Ervin_Portafolio/blob/main/IMAGES/Ingreso%20siempre%20es%20bajo%20con%20educaci%C3%B3n%20baja.jpeg)
+![](/IMAGES/Ingreso%20siempre%20es%20bajo%20con%20educaci%C3%B3n%20baja.jpeg)
 
 La gráfica muestra que en efecto hay una relación entre la composición educativa de las edades, el ingreso siempre es más bajo con una educación baja, sin embargo, también baja con la edad, independientemente de la educación. Entonces ninguna de las dos hipótesis puede ser descartada. Finalmente midamos el nivel de relación que tienen cada una de las variables respecto al ingreso, para ello se realizará una regresión lineal simple.
 
@@ -106,7 +106,7 @@ La gráfica muestra que en efecto hay una relación entre la composición educat
 `stargazer(lmingreso, type = "text")`
 
 
-![](https://github.com/ervinflx/Ervin_Portafolio/blob/main/IMAGES/2022-05-08%20(2).png)
+![](/IMAGES/2022-05-08%20(2).png)
 
 
 La tabla nos muestra que existe una alta relación entre todos los niveles educativos y la edad al momento de esperar cierto incremento en el ingreso trimestral de las personas mexicanas. Agreguemos más variables y a partir de entonces veamos qué variables de todas las que INEGI provee son más importantes o menos importantes en el impacto que tengan con el ingreso trimestral.
