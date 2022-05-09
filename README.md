@@ -1,4 +1,4 @@
-# Ervin_Portafolio
+# Ervin Portafolio
 Portafolio de data science
 
 
@@ -64,6 +64,51 @@ La gráfica anterior es interesante de observar. Por un lado, los niveles educat
  
 INSERTAR IMAGEN()
 
-La gráfica de arriba explica de mejor manera como la expansión de la educación media/superior fue en 1960, por lo que la mediana se ve afecada por la política pública de ese momento, un buen tema de análisis para alguien que estudie el impacto de las políticas públicas a largo plazo.
+La gráfica de arriba explica de mejor manera como la expansión de la educación media/superior fue en 1960, por lo que la mediana se ve afecada por la política pública de ese momento, un buen tema de análisis para alguien que estudie el impacto de las políticas públicas a largo plazo. Sin embargo, aún no se explica ¿por qué los ingresos medianos bajan con la edad? Se plantean dos hipótesis, 1) por diversos factores que están asociados directamente al envejecimiento (disminución de capacidad, discriminación, desactualización); 2) la composición educativa de las edades.
+
+
+Se reducirán las categorías educativas a tres grupos para poder tener una mejor visualización: hasta primaria, secundaria y mayor que secundaria.
+
+`reco_nivelaprob <- 
+  tibble::tribble(
+    ~nivelaprob, ~nivelaprob_reco,
+    "Profesional", "profesional",
+    "Posgrado", "profesional",
+    "Primaria", "primaria<=",
+    "Técnica/Normal", "> primaria",
+    "Secundaria", "> primaria",
+    "Preparatoria o bachillerato", "> primaria",
+    "Ninguno", "primaria<=")`
+
+
+`activo %>% 
+  left_join(reco_nivelaprob) %>% 
+  mutate(edad = chop_width(edad, width = 5), 
+         nivelaprob_reco = fct_relevel(nivelaprob_reco, "primaria<="))  %>%
+  ggplot(aes(x= edad, y = ingreso_trim)) + 
+  geom_boxplot(aes(fill = nivelaprob_reco)) + 
+  geom_boxplot(alpha = 0.2, color = "grey") + 
+  scale_fill_viridis_d() + 
+  labs(title = "El ingreso siempre es más bajo con educación baja", 
+       subtitle = "Pero también baja con la edad independientemente de la educación", 
+       x = "Grupo de edad",
+       y = "Ingreso trimestral en $ M.N.", 
+       fill = "Nivel educativo
+       agrupado",
+       caption = "Elaboración propia a partir de las bases de datos\n de la Encuesta Nacional Ingreso Gasto del INEGI")`
+
+La gráfica muestra que en efecto hay una relación entre la composición educativa de las edades, el ingreso siempre es más bajo con una educación baja, sin embargo, también baja con la edad, independientemente de la educación. Entonces ninguna de las dos hipótesis puede ser descartada. Finalmente midamos el nivel de relación que tienen cada una de las variables respecto al ingreso, para ello se realizará una regresión lineal simple.
+
+`lmingreso = (lm(ingreso_trim ~ edad + nivelaprob, data = activo))`
+`stargazer(lmingreso, type = "text")`
+
+
+insertar imagen()
+
+
+La tabla nos muestra que existe una alta relación entre todos los niveles educativos y la edad al momento de esperar cierto incremento en el ingreso trimestral de las personas mexicanas. Agreguemos más variables y a partir de entonces veamos qué variables de todas las que INEGI provee son más importantes o menos importantes en el impacto que tengan con el ingreso trimestral.
+
+
+
 
 
