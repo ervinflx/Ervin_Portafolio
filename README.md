@@ -3,13 +3,15 @@
 ¿Existe una relación entre los ingresos y la edad de las personas en México?
 Observemos el siguiente gráfico. 
 
-`pobMexico %>% 
+```
+pobMexico %>% 
   ggplot(aes(x = edad, y = ingreso_trim, group = edad )) + 
   geom_boxplot() + 
   labs(title = "Los ingresos medianos bajan con la edad", 
        subtitle = "Pero no se sabe por qué a simple vista", 
        y = "Ingreso trimestral en $ M.N.", 
-       x = "Edad en años cumplidos", caption = "Elaboración propia a partir de las bases de datos de la Encuesta Nacional Ingreso Gasto del INEGI")`
+       x = "Edad en años cumplidos", caption = "Elaboración propia a partir de las bases de datos de la Encuesta Nacional Ingreso Gasto del INEGI")
+	```
 
 ![](/IMAGES/ingresos%20primera%20foto.jpeg)
 
