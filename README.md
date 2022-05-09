@@ -41,7 +41,7 @@ Hay que tomar la variable de años y la variable del nivel educativo para observ
        x = "Último nivel aprobado",
        caption = "Elaboración propia a partir de las bases de datos de la Encuesta Nacional Ingreso Gasto del INEGI")`
 
-![](/ervinflx/Ervin_Portafolio/blob/main/IMAGES/tercera%20imagen.jpeg)
+![](/main/IMAGES/tercera%20imagen.jpeg)
 
 La gráfica anterior es interesante de observar. Por un lado, los niveles educativos más bajos tienen medianas más altas, entonces ¿se puede aseverar que los niveles educativos influyen a que las personas jovenes solamente busquen tener mayores niveles educativos? No, pero hay una explicación más interesante aún, entre 1960 y 1970 el gobierno de México comenzó a expander la educación media/superior a nivel nacional, por ende, han pasado entre 50 y 40 años, lo que ha permitido que la mediana de los niveles de educación vayan descendiendo.
 
