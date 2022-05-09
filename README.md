@@ -14,7 +14,7 @@ Observemos el siguiente gráfico.
        y = "Ingreso trimestral en $ M.N.", 
        x = "Edad en años cumplidos", caption = "Elaboración propia a partir de las bases de datos de la Encuesta Nacional Ingreso Gasto del INEGI")`
 
-insertar imagen()
+![](/IMAGES/ingresos%20primera%20foto.jpeg)
 
 La gráfica anterior nos muestra que entre más grande, en terminos de edad, sea la población, la mediana del ingreso de las personas se reduce. Para poder encontrar una relación se procederá a utilizar una variable distinta con el ingreso, el nivel educativo.
 
