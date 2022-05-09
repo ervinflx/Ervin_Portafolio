@@ -2,7 +2,7 @@
 Portafolio de data science
 
 
-## Proyecto 1.- Análisis de la relación entre ingresos y la edad de las personas en México\n (regresión lineal para estimar importancia de variables)
+## Proyecto 1.- Análisis de la relación entre ingresos y la edad de las personas en México (regresión lineal para estimar importancia de variables)
 ¿Existe una relación entre los ingresos y la edad de las personas en México?
 Observemos el siguiente gráfico. 
 
